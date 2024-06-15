@@ -33,6 +33,7 @@
   doc
 )
 
+#set par(leading: 0.8em)
 
 // your main text goes here
 
