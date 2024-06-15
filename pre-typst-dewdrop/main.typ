@@ -5,23 +5,36 @@
   footer: [Dewdrop],
   navigation: "mini-slides",
 	mini-slides: (
-		height: 2em,
+		height: 2.2em,
 		x: 2em,
 		section: false,
 		subsection: false,
 	)
   // navigation: none,
 )
+
+
 #let s = (s.methods.info)(
   self: s,
-  title: [Hello],
-  subtitle: [Subtitle],
-  author: [Authors],
-  date: datetime.today(),
-  institution: [Institution],
+  title: [
+    #set text(font: ("Georgia", "KaiTi"), size: 36pt)
+    这是标题 This is title.
+  ],
+  subtitle: [
+    #set text(font: ("Georgia", "KaiTi"), size: 24pt)
+    这是副标题 This is subtitle.
+  ],
+  author: [
+    #set text(font: ("Georgia", "KaiTi"), size: 24pt)
+    作者 Author \
+    机构 Institution
+  ],
 )
+
 #let (init, slides, touying-outline, alert, speaker-note) = utils.methods(s)
 #show: init
+
+#set text(font: ("Arial", "FZHei-B01S"), size: 24pt)
 
 #show strong: alert
 
@@ -29,7 +42,7 @@
 #show: slides
 
 
-= Section A
+= Section A 第一大节
 
 == Subsection A.1
 
@@ -61,6 +74,8 @@
 
 #slide[
   We can use `#pause` to #pause display something later.
+
+  你好
 
   #pause
   

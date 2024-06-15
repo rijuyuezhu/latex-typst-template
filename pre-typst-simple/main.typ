@@ -4,21 +4,23 @@
 #let (init, slides) = utils.methods(s)
 #show: init
 
+#set text(font: ("Arial", "SimHei"), size: 24pt)
+
 #let (slide, empty-slide, title-slide, centered-slide, focus-slide) = utils.slides(s)
 #show: slides
 
 #title-slide[
-  = Keep it simple!
-  #v(2em)
+  #set text(font: ("Georgia", "KaiTi"))
 
-  Alpha #footnote[Uni Augsburg] #h(1em)
-  Bravo #footnote[Uni Bayreuth] #h(1em)
-  Charlie #footnote[Uni Chemnitz] #h(1em)
+  #text(size: 36pt)[
+    这是标题；English
+  ] 
 
-  July 23
+  作者 Author \
+  机构 Institution
 ]
 
-== First slide
+= 第一部分
 
 #slide[
   #lorem(20)
@@ -30,7 +32,7 @@
   This is very important.
 ]
 
-= Let's start a new section!
+= 第二部分
 
 == Dynamic slide
 
