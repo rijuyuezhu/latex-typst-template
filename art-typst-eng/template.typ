@@ -307,7 +307,6 @@
 #let theorem = thmbox(
   "theorem", 
   "Theorem", 
-  fill: rgb("#eeffee"),
   base_level: 1,
   separator:none
   )
@@ -324,8 +323,6 @@
   "definition", 
   "Definition",
   base_level: 1,
-  stroke: rgb("#0000ff") + 0.5pt,
-  fill: rgb("#eeeeff"),
   separator:none
 )
 
@@ -334,7 +331,6 @@
   "Lemma",
   base: "theorem",
   base_level: 1,
-  fill: rgb("#eeffee"),
   titlefmt: strong,
   separator:none)
 
